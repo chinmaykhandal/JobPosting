@@ -7,53 +7,76 @@ import java.util.Arrays;
 @Document(collection = "JobPost")
 public class Post {
 
-    private String profile;
-    private String desc;
-    private int exp;
-    private String techs[];
+    private String postedOn;
+    private String title;
+    private String type;
+    private String location ;
+    private String companyName;
 
-    public String getProfile() {
-        return profile;
+    private String companyUrl;
+    private String skills[];
+    private String link;
+
+    public String getPostedOn() {
+        return postedOn;
     }
 
-    public void setProfile(String profile) {
-        this.profile = profile;
+    public void setPostedOn(String postedOn) {
+        this.postedOn = postedOn;
     }
 
-    public String getDesc() {
-        return desc;
+    public String getTitle() {
+        return title;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public Post() {
+    public String getType() {
+        return type;
     }
 
-    public int getExp() {
-        return exp;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void setExp(int exp) {
-        this.exp = exp;
+    public String getLocation() {
+        return location;
     }
 
-    @Override
-    public String toString() {
-        return "Post{" +
-                "profile='" + profile + '\'' +
-                ", desc='" + desc + '\'' +
-                ", exp=" + exp +
-                ", techs=" + Arrays.toString(techs) +
-                '}';
+    public void setLocation(String location) {
+        this.location = location;
     }
 
-    public String[] getTechs() {
-        return techs;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setTechs(String[] techs) {
-        this.techs = techs;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
-}
+
+    public String getCompanyUrl() {
+        return companyUrl;
+    }
+
+    public void setCompanyUrl(String companyUrl) {
+        this.companyUrl = companyUrl;
+    }
+
+    public String[] getSkills() {
+        return skills;
+    }
+
+    public void setSkills(String[] skills) {
+        this.skills = skills;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }}
